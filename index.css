@@ -71,7 +71,7 @@ h2  {
 }
 
 button   {
-    padding: 20px 25px;
+    padding: 15px 25px;
     border: none;
     color: white;
     text-align: center;
@@ -164,15 +164,36 @@ button:active {
     transition: all 0.3s;
 }
 
-@media screen and (max-width: 640px)   {
-    .content {
-    background-color:rgba(255,255,255,.5);
-    padding: 5%;
-    text-align: left;
-    max-width: 70%;
-    
-    box-shadow: 0px 0px 20px RGBA(0, 0, 0, 0.5);
+.socials    {
+    font-size: 20px;
 }
+
+.button-holder  {
+    text-align: left;
+}
+
+@media screen and (max-width: 540px)   {
+    .content {
+
+        padding: 5%;
+        text-align: center;
+        max-width: 80%;
+    }
+    
+    button {
+        padding: 10px 15px;
+        max-width: 25%;
+        font-size: 15px;
+        margin-right: 0px;
+        margin: 0px 10px;
+        
+    }
+    
+    .button-holder  {
+        text-align: center;
+
+        
+    }
 
 }
 

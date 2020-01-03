@@ -410,6 +410,10 @@ a.anchor {
     .herotitle  {
         width: 60%;
     }
+    
+    .section    {
+        border-radius: 20px;
+    }
 }
 
 @media screen and (min-width: 640px)   {
@@ -540,7 +544,7 @@ font-family: Cabin, Arial, sans-serif;
     text-align: center;
     
     clear: left;
-    padding-bottom: 20px;
+    padding-bottom: 
 }
 
 #footer a {
@@ -594,16 +598,17 @@ font-family: Cabin, Arial, sans-serif;
 #code button   {
     border: none;
     color: black;
-    padding: 10px 10px;
+    padding: 10px 20px;
     
     margin-left: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
+    border-radius: 5%;
 
     transition: 0.2s;
-    width: 20%;
+    display:inline-block
 
     font-weight: 500;
     font-family: Cabin, Arial, sans-serif;
@@ -614,6 +619,15 @@ font-family: Cabin, Arial, sans-serif;
     color: black;
     background-color: RGB(150, 150, 180);
 
+}
+
+#code .section   {
+    padding: 20px 0px;
+}
+
+#code .newpadding   {
+    padding: 20px 0px;
+    background-color: rgb(50, 50, 50);
 }
 
 /* ++++++++++++++++++++Design Content Section++++++++++++++++++++ */
@@ -661,6 +675,7 @@ font-family: Cabin, Arial, sans-serif;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
+    border-radius: 5%;
 
     transition: 0.2s;
     width: 20%;
@@ -676,17 +691,25 @@ font-family: Cabin, Arial, sans-serif;
 
 }
 
+#design .section   {
+    padding: 20px 0px;
+}
+
+#design .newpadding   {
+    padding: 20px 0px;
+    background-color: rgb(50, 50, 50);
+}
+
 /* ++++++++++++++++++++Pop-ups Content Section++++++++++++++++++++ */
 .tooltip    {
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 12px;
-    
-    float: left;
-    
+    margin-left: 20px;
     opacity: 90%;
     margin-top: 20px;
+    display: inline-block;
 }
 
 .project    {
