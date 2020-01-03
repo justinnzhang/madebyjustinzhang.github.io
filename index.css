@@ -172,7 +172,7 @@ button:active {
     text-align: left;
 }
 
-@media screen and (max-width: 540px)   {
+@media only screen and (max-width: 540px)   {
     .content {
 
         padding: 5%;
