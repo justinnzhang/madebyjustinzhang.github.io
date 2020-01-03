@@ -3,12 +3,12 @@
 body, html {
     height: 100%;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     font-family: Cabin, Arial, sans-serif;
-    
+
     /* scroll behaviour */
     scroll-behavior: smooth;
-    
+
     background-color: black;
 }
 
@@ -46,9 +46,9 @@ h   {
 .main   {
     margin: 20px;
     background-color: white;
-    
+
     width: 1024px;
-    
+
     box-shadow: 0px 0px 0px;
 }
 
@@ -57,16 +57,16 @@ h   {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    
+
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-    
-    z-index: 9999;
-    
-    background-color: black;
-    
-    height: 75px;
+
+    z-index: 99;
+
+    background-color: RGB(204, 108, 53);
+
+    height: 50px;
     box-shadow: 0px 0px 10px #010101;
 }
 
@@ -74,36 +74,40 @@ h   {
     text-decoration: none;
     color: RGB(240, 240, 240);
     font-weight: 600;
-    
-    font-size: 26px;
+
+    font-size: 20px;
 }
 
 .nav ul {
 
-    margin-left: 30px;
-    
-    padding: 10px;
+    margin-left: 20px;
+
+    padding-top: 10px;
     text-decoration: none;
     list-style-type: none;
 
 }
 
 .nav li {
-    padding-right: 20px;
+    padding-right: 30px;
 
     transition: all 0.3s;
-    font-size: 35px;
-    
+
     float:left;
 }
 
 
-.nav li:hover   {
+.nav li:hover {
     padding-left: 10px;
     padding-right: 20px;
-    
-    border-left: 2px solid RGB(204, 108, 53);
-    
+
+    transition-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+
+.nav li:hover > a {
+    color: grey;
     transition-duration: 0.5s;
     animation-duration: 0.5s;
 }
@@ -111,14 +115,24 @@ h   {
 /* ++++++++++++++++++++Hero Picture++++++++++++++++++++ */
 
 .heropicture {
-    background-image: url("images/headerpic.jpg");
+    height: 100%;
 
-    height: 100%; 
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}   
+}
+
+.video {
+    background-color: RGB(204, 108, 53);
+}
+
+.code   {
+    background-color: rgb(3, 161, 252);
+}
+
+.design {
+    background-color: rgb(111, 189, 114);
+}
 
 .herotitle  {
     position: relative;
@@ -126,7 +140,7 @@ h   {
     left: 50%;
 
     transform: translate(-50%, -50%);
-    
+
     width: 50%;
 }
 
@@ -138,14 +152,14 @@ h   {
     font-size: 40px;
     color: white;
     font-weight: 600;
-    
+
     margin-bottom: 10px;
 }
 
 .herotitle p     {
     margin-top: 10px;
     font-size: 20px;
-    
+
     font-family: Cabin, Arial, sans-serif;
     font-weight: 400l
 }
@@ -158,9 +172,9 @@ h   {
     font-size: 16px;
 
     text-align: center;
-    
+
     transition: all 0.3s;
-    
+
 
 }
 
@@ -168,16 +182,16 @@ h   {
     color: gray;
 
     transition-duration: 0.3s;
-    
+
     transform: translate(0px, 5px);
-    
+
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
 }
 
 .herotitle button:active    {
     transform: translate(0px 20px);
-    
+
 }
 
 /* ++++++++++++++++++++Social Media Icons++++++++++++++++++++ */
@@ -196,23 +210,23 @@ h   {
     font-size: 30px;
     height: 50px;
     text-decoration: none;
-    
+
     color: white;
-    
+
     transition: all 0.3s;
 }
 
 .fa:hover   {
     transform: translate(0px, -2px);
-    
+
     color: RGB(150, 150, 200);
-    
+
     animation-duration: 0.2s;
     transition-duration: 0.3s;
     animation-timing-function: ease-in-out;
 }
 
-/* ++++++++++++++++++++Anchors++++++++++++++++++++ */ 
+/* ++++++++++++++++++++Anchors++++++++++++++++++++ */
 a.anchor {
     display: block;
     position: relative;
@@ -225,7 +239,7 @@ a.anchor {
     width: 80%;
     max-width: 1024px;
     margin: 0 auto;
-    
+
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 0px
@@ -237,18 +251,18 @@ a.anchor {
 
 .header {
     background-image: url(images/headshot.jpg);
-    
+
     width: 100%;
-    
+
     max-width: 800px;
     height: 50vh;;
-    
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     margin: 0 auto;
-    
+
     border-radius: 50px;
 }
 
@@ -258,7 +272,7 @@ a.anchor {
     width: 350px;
     margin-left: auto;
     transform: translate(20px, 50px);
-    
+
     border-radius: 20px;
     box-shadow: 0px 0px 10px #010101;
 }
@@ -271,14 +285,14 @@ a.anchor {
 .section h  {
     font-weight: 600;
     font-size: 30px;
-    
+
     color: white;
     margin-top: 20px;
 }
 
 .section p  {
     font-size: 20px;
-    
+
     color: white;
 }
 
@@ -290,29 +304,29 @@ a.anchor {
 @media screen and (max-width: 640px)   {
     .section  {
         width: 100%;
-    
+
         padding: 0px;
     }
-    
+
     .titlehover {
         transform: translate(0, 0);
         background-color: transparent;
-        
+
         text-align: center;
         padding: 10px;
         width: inherit;
-        
+
         display: none;
     }
-    
+
     .header titlehover  {
         display: none;
-    } 
-    
+    }
+
     .titlehover h   {
         color: RGB(204, 108, 53);
     }
-    
+
     .introtext  {
         transform: translate(0, 0);
         background-color: transparent;
@@ -321,58 +335,58 @@ a.anchor {
         width: inherit;
         display: none;
     }
-    
+
     .textpadding  {
         padding: 0px;
     }
-    
+
     .header {
         width: 100%;
         height: 500px;
         border-radius: 0px;
-        
+
         padding: 0px;
         margin: 0px;
     }
-    
+
     .mobile-header  {
         display: block;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 10px;
     }
-    
+
     .mobile {
         display: block;
         padding: 0;
     }
-    
+
     .non-mobiletext {
         display: none;
         width: 100%;
     }
-    
+
     .nav    {
         width: 100%;
-        height: 75px
+        height: 50px
     }
-    
+
     .nav a {
         font-size: 20px;
     }
-    
+
     .section h  {
         font-size: 25px;
     }
-    
+
     .section p  {
         font-size: 14px;
     }
-    
+
     .section h2 {
         font-size: 20px;
     }
-    
+
     #video h3 {
         font-size: 16px;
         padding-left: 10px;
@@ -380,14 +394,25 @@ a.anchor {
         padding-top: 10px;
         padding-bottom: 5px;
     }
-    
+
     #video img  {
         margin-right: 20px;
     }
+    
+    .tooltip    {
+        font-size: 16px;
+    }
+    
+    .herotitle h    {
+        font-size: 45px;
+    }
+    
+    .herotitle  {
+        width: 60%;
+    }
 }
 
-@media screen and (max-width: 450px)   {
-
+@media screen and (min-width: 640px)   {
 }
 
 /* ++++++++++++++++++++Video Content Section++++++++++++++++++++ */
@@ -422,17 +447,17 @@ a.anchor {
 }
 
 #video button   {
-  border: none;
-  color: black;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-    
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+
     transition: 0.5s;
     width: 100%;
-    
+
     font-weight: 500;
 font-family: Cabin, Arial, sans-serif;
 
@@ -450,9 +475,9 @@ font-family: Cabin, Arial, sans-serif;
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    
+
     transition: all 0.5s;
-    
+
     min-width: 70px
 }
 
@@ -460,7 +485,7 @@ font-family: Cabin, Arial, sans-serif;
     transform: translateY(10px);
     transition: all 0.5s;
     transition-timing-function: ease;
-    
+
     opacity: 0.5;
 }
 
@@ -489,7 +514,7 @@ font-family: Cabin, Arial, sans-serif;
   padding-top: 50%;
   position: relative;
 }
- 
+
 .wrapper iframe {
    border: 0;
    height: 100%;
@@ -500,7 +525,7 @@ font-family: Cabin, Arial, sans-serif;
 }
 
 .item p {
-    
+
 }
 
 .newpadding {
@@ -510,17 +535,18 @@ font-family: Cabin, Arial, sans-serif;
 
 #footer {
     background-color: black;
-    border-style: solid;
-    border-color: white;
-    
-    
+
+
     text-align: center;
+    
+    clear: left;
+    padding-bottom: 20px;
 }
 
 #footer a {
     text-decoration: none;
     color: white;
-    
+
     text-align: center;
 }
 
@@ -530,4 +556,147 @@ font-family: Cabin, Arial, sans-serif;
 }
 
 
+/* ++++++++++++++++++++Code Content Section++++++++++++++++++++ */
+#code {
+    padding-bottom: 20px;
+}
 
+#code h {
+    margin: 20px;
+
+}
+
+#code h2 {
+    margin: 20px;
+    color: white;
+
+    padding-left: 10px;
+    border-left: 5px solid rgb(3, 161, 252);
+    float: left;
+}
+
+#code h3 {
+    color: white;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 0px;
+    font-size: 25px;
+}
+
+#code p {
+    margin: 20px;
+    color: white;
+    
+    clear: left;
+}
+
+#code button   {
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+
+    transition: 0.2s;
+    width: 20%;
+
+    font-weight: 500;
+    font-family: Cabin, Arial, sans-serif;
+
+}
+
+#code button:hover {
+    color: black;
+    background-color: RGB(150, 150, 180);
+
+}
+
+/* ++++++++++++++++++++Design Content Section++++++++++++++++++++ */
+#design {
+    padding-bottom: 20px;
+}
+
+#design h {
+    margin: 20px;
+
+}
+
+#design h2 {
+    margin: 20px;
+    color: white;
+
+    padding-left: 10px;
+    border-left: 5px solid rgb(111, 189, 114);
+    float: left;
+}
+
+#design h3 {
+    color: white;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 0px;
+    font-size: 25px;
+}
+
+#design p {
+    margin: 20px;
+    color: white;
+    
+    clear: left;
+}
+
+#design button   {
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+
+    transition: 0.2s;
+    width: 20%;
+
+    font-weight: 500;
+    font-family: Cabin, Arial, sans-serif;
+
+}
+
+#design button:hover {
+    color: black;
+    background-color: RGB(150, 150, 180);
+
+}
+
+/* ++++++++++++++++++++Pop-ups Content Section++++++++++++++++++++ */
+.tooltip    {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    
+    float: left;
+    
+    opacity: 90%;
+    margin-top: 20px;
+}
+
+.project    {
+    background-color: darkgreen;
+}
+
+.class  {
+    background-color: #4F2683
+}
+
+.hack   {
+    background-color: #d1a072;
+}

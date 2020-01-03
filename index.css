@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500i,700, 800|Source+Sans+Pro:700&display=swap');
+
+html {
+    height:100%;
+}
+
+body {
+    margin:0;
+    font-family: Cabin, Arial, sans-serif;
+}
+
+h1  {
+    font-weight: 800;
+    font-size: calc(3vh);
+    margin-bottom: 0px;
+}
+
+h2  {
+
+    font-weight: 800;
+    font-size: calc(3vh);
+}
+
+.bg {
+    animation:slide 7s ease-in-out infinite alternate;
+    background-image: linear-gradient(0.68turn, rgb(3, 161, 252), RGB(204, 108, 53), rgb(111, 189, 114));
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.bg3 {
+    animation-duration:3s;
+}
+
+.main   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.content {
+    background-color:rgba(255,255,255,.5);
+    padding: 3%;
+    text-align: left;
+    max-width: 50%;
+    
+    box-shadow: 0px 0px 20px RGBA(0, 0, 0, 0.5);
+    max-width: 500px;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(25%);
+    } 
+    100% {
+        transform:translateX(-25%);
+    } 
+}
+
+button   {
+    padding: 20px 25px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    overflow: hidden;
+    background-color: RGB(50, 50 ,50);
+    
+    box-shadow: 0px 0px 5px RGBA(0, 0, 0, 0.8);
+    
+    transition: all 0.3s;
+}
+
+button:hover    {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+#video-button:hover {
+    background-color: RGB(204, 108, 53);
+}
+
+#code-button:hover {
+    background-color: rgb(3, 161, 252);
+}
+
+#design-button:hover    {
+    background-color: rgb(111, 189, 114);
+}
+
+button:active {
+    color: black;
+}
+
+/*---ICONS---*/
+.fa {
+    padding-right: 30px;
+    
+    font-size: 10px;
+    
+    height: 60px;
+    
+    text-decoration: none;
+
+    color: rgb(0, 119, 181);
+
+    transition: all 0.3s;
+}
+
+.fa-youtube  {
+    color: #c4302b;
+}
+
+.fa-envelope    {
+    color: midnightblue;
+}
+
+.fa:hover   {
+    transform: translate(0px, -2px);
+
+    color: RGB(150, 150, 200);
+
+    animation-duration: 0.2s;
+    transition-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+#video  {
+    display: none;
+    text-decoration: underline;
+}
+
+#code   {
+    display: none;
+    text-decoration: underline;
+}
+
+#design {
+    display: none;
+    text-decoration: underline;
+}
+
+#made {
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 640px)   {
+    .content {
+    background-color:rgba(255,255,255,.5);
+    padding: 5%;
+    text-align: left;
+    max-width: 70%;
+    
+    box-shadow: 0px 0px 20px RGBA(0, 0, 0, 0.5);
+}
+
+}
+
