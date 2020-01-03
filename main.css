@@ -591,7 +591,9 @@ font-family: Cabin, Arial, sans-serif;
 #code button   {
     border: none;
     color: black;
+    background-color: white;
     padding: 10px 20px;
+    
     
     margin-left: 20px;
     text-align: center;
@@ -662,6 +664,8 @@ font-family: Cabin, Arial, sans-serif;
     border: none;
     color: black;
     padding: 10px 10px;
+    
+    background-color: white;
     
     margin-left: 20px;
     text-align: center;
