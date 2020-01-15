@@ -62,7 +62,7 @@ h   {
     max-width: 1024px;
     margin: 0 auto;
 
-    z-index: 99;
+    z-index: 10;
 
     background-color: RGB(204, 108, 53);
 
@@ -456,7 +456,7 @@ a.anchor {
     width: 100%;
 
     font-weight: 500;
-font-family: Cabin, Arial, sans-serif;
+    font-family: Cabin, Arial, sans-serif;
 
 }
 
@@ -663,9 +663,9 @@ font-family: Cabin, Arial, sans-serif;
 #design button   {
     border: none;
     color: black;
-    padding: 10px 10px;
-    
     background-color: white;
+    padding: 10px 20px;
+    
     
     margin-left: 20px;
     text-align: center;
@@ -675,7 +675,7 @@ font-family: Cabin, Arial, sans-serif;
     border-radius: 5%;
 
     transition: 0.2s;
-    width: 20%;
+    display:inline-block
 
     font-weight: 500;
     font-family: Cabin, Arial, sans-serif;

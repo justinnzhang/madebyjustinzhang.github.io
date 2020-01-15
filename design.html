@@ -3,6 +3,7 @@
 <head>
     <title>design by Justin Zhang</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,15 +47,34 @@
         
         <div class="section">
             <div class="newpadding">
-                    <div class="tooltip project">Personal Project</div>
+                    <div class="tooltip class">Course Work</div>
                 <div class="item-header">
-                    <h2>This Website</h2>
+                    <h2>Go With The Flo</h2>
                 </div>
-                <p><i>Currently in progress</i></p>
-                <p>This entire website was coded from scratch. I worked extensively on trying to create an effective user experience for visitors, while also maintaining a strong sense of branding throughout with the use of colors.
+                <p>
+                    Created as a part of a feasibility study where teams would have to come up with a product idea and pitch.
                 </p>
+                
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">View Project</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content" style="color: white">
+                    <span class="close">&times;</span>
+                        <h3>Go With The Flo</h3>
+                        <p>A mobile website mock up created in Photoshop to represent the brand that we were creating. Working with my other group members to write content and understand specific design choices, this project allowed me to design from a different perspective and make informed choices based on data and research.</p>
+                        <img id="gallery" src="images/gowiththeflo/main.png"/> 
+                        <img id="gallery" src="images/gowiththeflo/page2.png"/> 
+                        <img id="gallery" src="images/gowiththeflo/page3.png"/> 
+                        <img id="gallery" src="images/gowiththeflo/page4.png"/> 
+                    </div>
+                </div>
             </div>
         </div>
+            
             
         <div class="section">
             <div class="newpadding">
@@ -65,10 +85,21 @@
 
                 <p>Designed during StarterHacks 2019 as a platform for students to find affordable housing options and for landlords to find reliable tenants.</p>
 
-                <a href="https://www.figma.com/file/L7QDOEXeSUAJDqDhOWqftROl/HomeHub?node-id=0%3A1" target="_blank"><button>Visit</button></a>
+                <a href="https://www.figma.com/file/L7QDOEXeSUAJDqDhOWqftROl/HomeHub?node-id=0%3A1" target="_blank"><button>Visit Figma</button></a>
             </div>
         </div>
         
+        <div class="section">
+            <div class="newpadding">
+                    <div class="tooltip project">Personal Project</div>
+                <div class="item-header">
+                    <h2>This Website</h2>
+                </div>
+                <p><i>Currently in progress</i></p>
+                <p>This entire website was coded from scratch. I worked extensively on trying to create an effective user experience for visitors, while also maintaining a strong sense of branding throughout with the use of colors.
+                </p>
+            </div>
+        </div>
         <div class="section">
             <div class="newpadding">
                     <div class="tooltip project">Personal Project</div>
@@ -94,6 +125,34 @@
             <p><a href="#top">top</a></p>
         </div>
     </div>
+    
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
 
 </body>
 </html>

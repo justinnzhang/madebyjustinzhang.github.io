@@ -72,8 +72,8 @@ h2  {
 
 button   {
     padding: 15px 25px;
-    border: none;
-    color: white;
+    border: solid 5px black;
+    color: black;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -83,7 +83,7 @@ button   {
     border-radius: 5px;
     
     overflow: hidden;
-    background-color: RGB(50, 50 ,50);
+    background-color: RGBA(50, 50 ,50, 0);
     
     box-shadow: 0px 0px 5px RGBA(0, 0, 0, 0.8);
     
@@ -92,7 +92,9 @@ button   {
 
 button:hover    {
     cursor: pointer;
-    opacity: 60%;
+    opacity: 70%;
+    
+    box-shadow: 0px 0px 10px RGBA(0, 0, 0, 1);
 }
 
 #video-button:hover {
