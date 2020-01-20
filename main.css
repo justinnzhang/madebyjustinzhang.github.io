@@ -537,7 +537,7 @@ a.anchor {
     text-align: center;
     
     clear: left;
-    padding-bottom: 
+    padding-bottom: 20px;
 }
 
 #footer a {
@@ -719,4 +719,9 @@ a.anchor {
 
 .hack   {
     background-color: #d1a072;
+}
+
+button a    {
+    text-decoration: none;
+    color: black;
 }
