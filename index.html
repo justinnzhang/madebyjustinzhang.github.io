@@ -1,45 +1,269 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>made by Justin Zhang</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset='utf-8'>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Made By Justin Zhang</title>
+  <link href="https://fonts.googleapis.com/css?family=Public+Sans:200,300,400,400i,600,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- Fluent Design Bootstrap -->
+  <link rel="stylesheet" href="./css/fluent.css">
+  <!-- Micon icons-->
+  <link rel="stylesheet" href="./css/micon.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/custom.css">
+  <!-- Adding Icons -->
+  <script src="https://kit.fontawesome.com/ba7bead3f8.js" crossorigin="anonymous"></script>
+  <!-- Parallax JS -->
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+  <link rel="manifest" href="./favicons/site.webmanifest">
+  <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
-<body style="background-color: white">
-    <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg3"></div>
-    <div class="main">
-        <div class="content">
-            <h2><u>made</u> by Justin Zhang
-            </h2>
-            <p>Creating digital experiences through video and code.<br><br></p>
-            <div style="socials">
-                <a style="float: center" href="https://www.linkedin.com/in/justinzhang000/" class="fa fa-linkedin fa-2x" target="_blank"></a>
-                <a href="https://www.youtube.com/justinzhang" class="fa fa-youtube fa-2x"></a>
-                <a href="mailto:justinzhangzll@gmail.com?Subject=Hello%20there!" class="fa fa-envelope fa-2x"></a>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExampleDark" aria-controls="navbarExampleDark"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mx-auto" id="navbarExampleDark">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+            <span class="fas fa-angle-down"></span>Featured Projects 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./pages/hackwestern.html">Hack Western</a>
+              <a class="dropdown-item" href="./pages/wfn.html">Western Founders Network</a>
+              <a class="dropdown-item font-weight-bold" href="./pages/404.html">More Coming Soon</a>
             </div>
-            <div class="button-holder">
-                <a href="./video.html"><button id="video-button">Video</button></a>
-                <a href="./code.html"><button id="code-button">Code</button></a>
-                <a href="./design.html"><button id="design-button">Design</button></a>
-            </div>
-
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assets/resume.pdf" target="_blank">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/personalvideo.html">Personal Video Projects</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    
+  </nav>
+  
+  <!-- Header -->
+  <header>
+  <div class="container top-space-lg bottom-space">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="padding-box">
+          <div class="sub-header">
+            <h1 class="h1 font-weight-bold">Hello there! 👋</h1>
+            <div class="sub-underline-lg intro-gradient wow fadeInLeft"></div>
+          </div>
+          <p class="p3">My name is Justin Zhang, and I am a Computer Science and Business student. I absolutely love creating digital products; from videography and animation, to websites and software, I'm a well-rounded technical, business-oriented, and creative person!</p>
+          <p>Feel free to connect below!</p>
+          <p><span class="font-italic">This is site is still under-construction, please bear with the messiness for the time being!</span> 👷</p>
+          <!-- Social Media Button Section -->
+          <a class="btn linkedin" href="https://www.linkedin.com/in/justinzhang000/" role="button" target="_blank"><p class="fab fa-linkedin-in bottom-space-none"></p></a>
+          <a class="btn github" href="https://github.com/madebyjustinzhang" role="button" target="_blank"><p class="fab fa-github bottom-space-none"></p></a>
+          <a class="btn email" href="mailto:justinzhangzll@gmail.com?Subject=Hello%20there!" role="button" target="_blank"><p class="fas fa-envelope bottom-space-none"></p></a>
+        </div>
+      </div>
+      
+      <!-- Parallax Profile Image Section -->
+      <div class="col-sm-4">
+        <div class="padding-box">
+          <div class="top-item wow fadeInUp shadow-lg" data-wow-duration="1s" data-wow-delay="0.333s"></div>
+          <div class="center-image-box my-auto wow fadeInUp">
+            <img src="./images/headshot.webp" class="headshot-img shadow" data-wow-duration="1s" id="image-layer" alt="Headshot of Justin Zhang">
+          </div>
+          <div class="bottom-item wow fadeInUp shadow-sm" data-wow-duration="1s" data-wow-delay="0.666s"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+  
+  <!-- Featured Work Section -->
+  <div class="container bottom-space">
+    <div class="row">
+      <div class="col">
+        <h2 class="h2 font-weight-bold">Featured Work</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <!--Card-->
+        <!-- 
+          Image illustrated by our team, received explicit permission to use 
+        -->
+        <a href="./pages/hackwestern.html" class="override-decoration">
+        <div class="card-hoverable wow fadeInUp" data-wow-delay="0.333s" data-wow-duration="0.666s">
+          <div class="view">
+            <img src="./images/hackwestern6.webp" class="card-img-top" alt="Hack Western Cover Photo">
+          </div>
+          <div class="card-body">
+            <span class="badge badge-primary">NEW</span>
+            <h3 class="card-title font-weight-bold sh3">Hack Western</h3>
+            <p class="card-text">My journey into product designer for one of Ontario's largest student-run Hackathons.</p>
+            <p class="top-space-xs">Read <span class="fas fa-chevron-right"></span></p>
+          </div>
+        </div>
+        </a>
+        
+      </div>
+      <div class="col-sm">
+        <!--Card-->
+        <a href="./pages/wfn.html" class="override-decoration">
+        <div class="card-hoverable wow fadeInUp" data-wow-delay="0.666s" data-wow-duration="0.666s">
+          <div class="view">
+            <img src="./images/wfn.webp" class="card-img-top" alt="Western Founders Network Logo">
+          </div>
+          <div class="card-body">
+            <span class="badge badge-primary">NEW</span>
+            <h3 class="card-title font-weight-bold sh3">Western Founders Network</h3>
+            <p class="card-text">From Director of Marketing to VP of Design, what my first university club experience taught me.</p>
+            <p class="top-space-xs">Read <span class="fas fa-chevron-right"></span></p>
+          </div>
+        </div>
+        </a>
+        <!--/.Card-->
+      </div>
+      
+      <div class="col-sm">
+        <!--Card-->
+        <!-- 
+          Image taken from video I created 
+        -->
+        <div class="card-hoverable wow fadeInUp cursor-disabled" data-wow-delay="1s" data-wow-duration="0.666s">
+          <div class="view">
+            <img src="./images/munichre.webp" class="card-img-top" alt="Munich Re Cover Photo">
+          </div>
+          <div class="card-body">
+            <span class="badge badge-secondary">COMING SOON</span>
+            <h3 class="card-title font-weight-bold sh3">Munich Re Canada</h3>
+            <p class="card-text">Helping to build a brand new digital onboarding process and recruitment video branding for the world's largest reinsurer. </p>
+          </div>
+        </div>
+        <!--/.Card-->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Other Work -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="h2 font-weight-bold">Other Work</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+          <a href="./pages/fun.html" class="fun-override">
+            <div class="card fun-override">
+              <img class="card-img" src="https://mdbootstrap.com/img/Photos/Others/images/12.jpg" alt="Card image">
+              <div class="card-img-overlay p-3 text-white fun-override" style="background-color:rgba(0,0,0,.45)">
+                <div class="full-bg">
+                  <span class="badge badge-primary">NEW</span>
+                  <h4 class="h4 font-weight-bold">Personal Video/Animation Projects</h4>
+                  <p class="card-subtitle">Includes short films, 3D renders, animations, and personal video projects</p>
+                  <a href="./pages/fun.html" class="card-link">
+                    Visit
+                    <span class="fas fa-chevron-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </a>
+
+      </div>
+      <div class="col-sm">
+        <!-- Card -->
+          <div class="card">
+            <img class="card-img" src="./images/kic.webp" alt="Card image">
+            <div class="card-img-overlay p-3 text-white fun-override" style="background-color:rgba(0,0,0,.45)">
+              <div class="full-bg">
+                <span class="badge badge-secondary">COMING SOON</span>
+                <h4 class="h4 font-weight-bold card-title">KPMG Ideation Challenge</h4>
+                <p class="card-subtitle">Represented Ontario with a winning product idea to give back time. Pitched in front of senior partners during the National Round.</p>
+              </div>
+            </div>
+          </div>
+        <!-- !Card -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <!-- Card -->
+          <div class="card">
+            <img class="card-img" src="./images/western.webp" alt="Card image">
+            <div class="card-img-overlay p-3 text-white fun-override" style="background-color:rgba(0,0,0,.45)">
+              <div class="full-bg">
+                <span class="badge badge-secondary">COMING SOON</span>
+                <h4 class="h4 font-weight-bold card-title">Western University Marketing Assistant</h4>
+                <p class="card-subtitle">In this part-time role, I was able to help build the online video branding of the university's housing department.</p>
+              </div>
+            </div>
+          </div>
+        <!-- !Card -->
+      </div>
+      <div class="col">
+          <div class="card">
+            <img class="card-img" src="./images/sophing.webp" alt="Card image">
+            <div class="card-img-overlay p-3 text-white fun-override" style="">
+              <div class="full-bg">
+                <span class="badge badge-secondary">COMING SOON</span>
+                <h4 class="h4 font-weight-bold card-title">Western University Orientation Leader</h4>
+                <p class="card-subtitle">As a volunteer orientation leader, I lived in residence for the duration of the year, while also developing the brand of our team.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="page-footer font-small dark-blue top-space-sm">
+    <div class="footer-copyright text-center py-3 text-white-50">Made with ❤️ by Justin Zhang
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  
+  <!-- On Scroll Animations -->
+  <script src="./js/wow.min.js"></script>
+  <script>
+    $( document ).ready(function() {
+    new WOW().init();
+  });
+  </script>
+  
+  <!-- Simple Parallax Javascript -->
+  <script src="./js/simpleParallax.js"></script>
+  <script type="text/javascript" src="./js/custom/customparallax.js"></script>
 </body>
+
 </html>
