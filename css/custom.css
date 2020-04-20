@@ -226,10 +226,6 @@ body  {
   transform: scale(1.1);
 }
 
-.top-margin {
-  margin-top: 60px;
-}
-
 .list-group-flush {
   top: 100px;
 }
@@ -554,4 +550,10 @@ transform: scale(1.02);}
 
 .card-body  {
   overflow: hidden;
+}
+
+.card-fixed-size  {
+  overflow:hidden;
+  max-width: 100%;
+  max-height: 90%;
 }
