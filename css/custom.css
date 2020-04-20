@@ -209,6 +209,22 @@ body  {
 .card-link  {
   color: #12baff;
 }
+
+.view {
+  overflow: hidden;
+}
+
+.card {
+  transition: all 0.333s;
+}
+.card:hover {
+  box-shadow: 0px 0px 20px 10px RGBA(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
+.card:hover .card-img-top  {
+  transform: scale(1.1);
+}
 /* -------------------------------------- 
         CUSTOM HOVER ANIMATIONS 
 -------------------------------------- */
@@ -451,13 +467,13 @@ background: rgb(237,183,255);
   color: white;
   cursor: pointer;
   transition: all 0.333s;
+  overflow: hidden;
 }
   .fun-override:hover {
     color: white;
     text-decoration: none;
     cursor: pointer;
-    transform: translateY(-5px);
-    box-shadow: 0px 0px 5px 1px RGBA(0, 0, 0, 0.3); }
+transform: scale(1.02);}
 
 .full-bg {
   padding: 30px;
@@ -468,4 +484,66 @@ background: rgb(237,183,255);
   display: block;
   height: 100px; /* fixed header height*/
   margin: -60px 0 0; /* negative fixed header height */
+}
+
+/* Removing subtitles on mobile views */ 
+@media only screen and (max-width: 992px){
+  .card-subtitle {
+    display: none !important;
+    visibility: none;
+  }
+}
+
+/* Minimizing text in specific widths */
+@media only screen and (min-width: 997px) and (max-width: 1201px){
+  .card-text  {
+    font-size: 1rem;
+  }
+  .top-item {
+  position: absolute;
+  width: 15%;
+  height: 75px;
+  display: block;
+  right: 20px;
+  top: -10px; }
+
+  .bottom-item  {
+    position: absolute;
+    width: 55%;
+    height: 30%;
+    display: block;
+    left: 5%;
+    top: 50%; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 997px){
+  .card-text  {
+    font-size: 1rem;
+  }
+  .top-item {
+  position: absolute;
+  width: 15%;
+  height: 75px;
+  display: block;
+  right: 20px;
+  top: -10px; }
+
+  .bottom-item  {
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    display: block;
+    left: 5%;
+    top: 30%; }
+  }
+
+/* Minimizing text in specific widths */
+@media only screen and (min-width: 578px) and (max-width: 768px){
+  .screen-fix {
+    display: none;
+  }
+}
+
+.card-body  {
+  overflow: hidden;
 }
