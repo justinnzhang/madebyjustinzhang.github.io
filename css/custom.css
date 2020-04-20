@@ -464,7 +464,13 @@ background: rgb(237,183,255);
 }
 
 .card-img-overlay {
-  background-color:rgba(0,0,0,.45)
+  background: rgb(56,97,115);
+  background: linear-gradient(90deg, rgba(56,97,115,0.6) 0%, rgba(130,94,65,0.6) 100%);
+  transition: all 0.333s;
+}
+
+.card-img-overlay:hover {
+  background-color: darkblue;
 }
 
 .fun-override {
@@ -477,7 +483,19 @@ background: rgb(237,183,255);
     color: white;
     text-decoration: none;
     cursor: pointer;
-transform: scale(1.02);}
+    transform: scale(1.02);}
+
+.fun-override-lg {
+  color: white;
+  cursor: pointer;
+  transition: all 0.333s;
+  overflow: hidden;
+}
+  .fun-override-lg:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.05);}
 
 .full-bg {
   padding: 30px;
