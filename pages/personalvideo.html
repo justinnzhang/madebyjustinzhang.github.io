@@ -33,7 +33,7 @@
 
 <body data-spy="scroll" data-target="#scrollspy-target">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="scrollspy-target">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
     <div class="container">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExampleDark" aria-controls="navbarExampleDark"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -62,13 +62,7 @@
           <a class="nav-link" href="../assets/resume.pdf" target="_blank">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-weight-bold text-white" href="">Personal Video Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#video">Video</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#rendering">3D Rendering</a>
+          <a class="nav-link active" href="">Personal Video Projects</a>
         </li>
       </ul>
     </div>
@@ -86,9 +80,20 @@
     </div>
   </div>
   </header>
-
+  
+  <div class="container top-space">
+  <div class="row">
+  <div class="col-md-2 bottom-space">
+    <div id="scrollspy-target" class="list-group-flush sticky-top">
+      <h3 class="sh4">Quick Navigation</h3>
+      <a class="list-group-item list-group-item-action" href="#video">Video</a>
+      <a class="list-group-item list-group-item-action" href="#rendering">3D Rendering</a>
+    </div>
+  </div>
+  <div class="col-md-10">
+ 
   <!-- Section -->
-  <div class="container top-space" id="video">
+  <div class="container" id="video">
     <div class="row">
       <div class="col">
         <h2 class="h2 font-weight-bold jumptarget">Featured Short Films</h2>
@@ -217,7 +222,9 @@
     </div>
   </div>
   <!-- Section -->
-
+     </div>
+  </div>
+  </div>
   <!-- Footer -->
   <footer class="page-footer font-small dark-blue top-space-sm">
     <div class="footer-copyright text-center py-3 text-white-50">Made with ❤️ by Justin Zhang

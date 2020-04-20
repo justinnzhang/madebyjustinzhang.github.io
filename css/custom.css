@@ -225,6 +225,14 @@ body  {
 .card:hover .card-img-top  {
   transform: scale(1.1);
 }
+
+.top-margin {
+  margin-top: 60px;
+}
+
+.list-group-flush {
+  top: 100px;
+}
 /* -------------------------------------- 
         CUSTOM HOVER ANIMATIONS 
 -------------------------------------- */
